@@ -35,8 +35,8 @@ class Test
       :username => "Demo",
       :password => "",
       :locale => "",
-      :server => "192.168.56.1",
-      :port => 20000
+      :server => "127.0.0.1",
+      :port => 5000
     }
   
     #initialise a connection
