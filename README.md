@@ -28,27 +28,30 @@ Except fo the xml file, these jars are pretty much hard coded, so ensure the cor
 
 ## Usage
 ```ruby
-require 'arsystem'
+require "arsystem"
 
-config = {
-  :username => 'Demo',
-  :password => '',
-  :server => '127.10.0.1',
-  :locale => '',
-  :port => 5000,
-}
+class Test
+    config = {
+      :username => "Demo",
+      :password => "",
+      :locale => "",
+      :server => "192.168.56.1",
+      :port => 20000
+    }
+  
+    #initialise a connection
+    @user = Arsystem::ARServerUser.new(
+      config[:username],
+      config[:password],
+      config[:locale],
+      config[:server],
+      config[:port]
+    )
 
-@user = Arsystem::ARServerUser.new(
-  config[:username],
-  config[:password],
-  config[:locale],
-  config[:server],
-  config[:port])
-}
-
-@user.getServerInfo
-
-@user.logout
+  puts @user.getServerVersion
+  
+  @user.logout
+end
 ```
 ## Contributing
 
