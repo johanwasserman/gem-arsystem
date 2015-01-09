@@ -1,6 +1,6 @@
 # Arsystem
 
-Exposes all the ARAPI classes and methos to jRuby.
+Exposes all the ARAPI classes and methods to jRuby.
 Note: ARAPI jar files not included.  See instructions below.
 
 ## Installation

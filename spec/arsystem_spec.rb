@@ -22,7 +22,7 @@ describe Arsystem do
     
     context "initialize" do
       it "should return version staring with a number" do
-        @user.getServerInfo.should == /^\d{1}/
+        @user.getServerVersion.should eql "8.1.00 201301251157"
       end
     end
     
