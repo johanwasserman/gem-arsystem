@@ -22,7 +22,8 @@ describe Arsystem do
     
     context "initialize" do
       it "should return version staring with a number" do
-        @user.getServerVersion.should eql "8.1.00 201301251157"
+        expect(@user.getServerVersion).to eql "8.1.00 201301251157"
+        #expect().to match(/a regex/)
       end
     end
     
