@@ -27,7 +27,7 @@ log4j.xml
 Except fo the xml file, these jars are pretty much hard coded, so ensure the correct vesrions.  I will make them a little more dynamic in a future release.  
 
 ## Usage
-
+```ruby
 config = {
   :username => 'Demo',
   :password => '',
@@ -44,7 +44,7 @@ config = {
 }
 @user.getServerInfo
 @user.logout
-
+```
 ## Contributing
 
 1. Fork it ( https://github.com/johanwasserman/arsystem/fork )
